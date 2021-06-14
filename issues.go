@@ -116,6 +116,9 @@ type Issue struct {
 	UserNotesCount       int                    `json:"user_notes_count"`
 	Links                *IssueLinks            `json:"_links"`
 	IssueLinkID          int                    `json:"issue_link_id"`
+	LinkType             string                 `json:"link_type"`
+	LinkCreatedAt        *time.Time             `json:"link_created_at"`
+	LinkUpdatedAt        *time.Time             `json:"link_updated_at"`
 	MergeRequestCount    int                    `json:"merge_requests_count"`
 	EpicIssueID          int                    `json:"epic_issue_id"`
 	Epic                 *Epic                  `json:"epic"`
